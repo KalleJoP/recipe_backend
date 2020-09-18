@@ -3,7 +3,8 @@ defmodule RecipeBackendWeb.FoodItemView do
   alias RecipeBackendWeb.FoodItemView
 
   def render("index.json", %{food_items: food_items}) do
-    %{data: render_many(food_items, FoodItemView, "food_item.json")}
+    # %{data: render_many(food_items, FoodItemView, "food_item.json")}
+    render_many(food_items, FoodItemView, "food_item.json")
   end
 
   def render("show.json", %{food_item: food_item}) do

@@ -4,7 +4,6 @@ defmodule RecipeBackendWeb.RecipeView do
   alias RecipeBackendWeb.RecipeItemView
 
   def render("index.json", %{recipes: recipes}) do
-    IO.inspect(recipes)
     # %{data: render_many(recipes, RecipeView, "recipe.json")}
     render_many(recipes, RecipeView, "recipe.json")
   end
